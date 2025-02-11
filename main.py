@@ -36,7 +36,6 @@ def send_options(message):
 
 # Función para manejar el comando /recopeli
 @bot.message_handler(commands=['recopeli'])
-#@bot.message_handler(func=lambda message: message.text == '🎬 Recomendar Película')
 def send_options_movie(message):
     markup = types.InlineKeyboardMarkup(row_width=3)
 
@@ -113,8 +112,6 @@ def echo_all(message):
 
 
 """ IMPLEMENTACIÓN API DE PELIS """
-print("Hola viteh")
-# esto es un comentario
 
 def get_movie(movie):
     url = f"http://www.omdbapi.com/?i=tt3896198&apikey=76146b9f&s={movie}&page=1"
