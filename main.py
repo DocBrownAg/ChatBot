@@ -114,6 +114,8 @@ def echo_all(message):
 
 """ IMPLEMENTACIÓN API DE PELIS """
 
+# esto es un comentario
+
 def get_movie(movie):
     url = f"http://www.omdbapi.com/?i=tt3896198&apikey=76146b9f&s={movie}&page=1"
     response = requests.get(url)
