@@ -35,8 +35,8 @@ def send_options(message):
         )
 
 # Función para manejar el comando /recopeli
-#@bot.message_handler(commands=['recopeli'])
-@bot.message_handler(func=lambda message: message.text == '🎬 Recomendar Película')
+@bot.message_handler(commands=['recopeli'])
+#@bot.message_handler(func=lambda message: message.text == '🎬 Recomendar Película')
 def send_options_movie(message):
     markup = types.InlineKeyboardMarkup(row_width=3)
 
